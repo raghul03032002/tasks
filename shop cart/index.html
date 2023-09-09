@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="home">
+            <nav
+            class="navbar navbar-expand-lg navbar-light bg-secondary px-4 border-bottom border-dark fixed-top "
+          >
+          <div class="container-fluid ">
+            <a class="navbar-brand fs-3" href="#home"
+              >Time <span class="text-light">Saver</span></a
+            >
+            <button class="btn btn-light d-flex flex-column px-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart-item"><span class="cartcount">0</span>
+              <img src="images/cart.svg" alt="icon" id="cart-icon" style="width: 20px;">
+            </button>
+          </div>
+        
+        </nav> 
+        <div class="offcanvas offcanvas-end" id="cart-item">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Cart</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <!-- view cart -->
+            <div class="offcanvas-body cart_value">
+             <!-- <div class="cart-box">
+                <div class="d-flex cart-details" style=" padding: 5px; border: 2px rgb(113, 112, 112) solid; border-radius: 7px;"><img src="images/pro-3.jpeg" alt="" class="w-25 img-thumbnail">
+                    <div class="mt-2 item" style="margin-left: 20%;">
+                        <div class="title">watch </div>
+                        <div class="cprice">RS:12000</div>
+                        <input type="number" value="1" id="" class="w-25 qtycounter">
+                        <div class="qty-price">RS:24000</div>
+                        
+                    </div>
+                    <img src="images/trash-bin.svg" alt="" class="remove me-2" style="width: 20px; cursor: pointer;" >
+                </div>
+            </div> -->
+            
+            </div>
+            <div class="total ms-5 mt-4">
+                <div class="total_price mb-3"> Total: RS:<span class="total_pri">000</span></div>
+                <button class="btn btn-secondary px-4" type="button" onclick="buy()">Buy</button>
+            </div>
+            </div>
+        </header>
+  <main>
+    <section id="Products" class="bg-secondary my-0"><hr>
+        <div class="container mt-3 ">
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-3">
+                  <div class="card text-center">
+                    <div class="card-body">
+                    <img src="images/pro-1.jpeg" width="200px" class="img-fluid img-thumbnail image">
+                      <h5 class="card-title" id="title">Titan</h5>
+                      <p class="card-text">
+                        Metal Analog Watch.
+                      </p>
+                      <a href="#" class="btn btn-secondary price">₹24796</a>
+                      <img src="images/cart.svg" style="width: 30px; cursor: pointer;" class="AddCart ms-4">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-3">
+                  <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pro-2.jpeg" width="190px" class="img-fluid img-thumbnail image">
+                      <h5 class="card-title">D-WELLINGTON</h5>
+                      <p class="card-text">
+                        Iconic Analog Watch 
+                      </p>
+                      <a href="#" class="btn btn-secondary price">₹23999</a>
+                      <img src="images/cart.svg" style="width: 30px; cursor: pointer;" class="AddCart ms-4">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-3">
+                  <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pro-3.jpeg" width="185px" class="img-fluid img-thumbnail image">
+                      <h5 class="card-title">Seiko </h5>
+                      <p class="card-text">
+                        PREMIER Analog Watch
+                      </p>
+                      <a href="#" class="btn btn-secondary price">₹43199</a>
+                      <img src="images/cart.svg" style="width: 30px; cursor: pointer;" class="AddCart ms-4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row2 -->
+              <div class="row ">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-3">
+                  <div class="card text-center">
+                    <div class="card-body">
+    <img src="images/pro-4.jpeg" width="200px" class="img-fluid img-thumbnail image">
+                      <h5 class="card-title">EMPORIO ARMANI </h5>
+                      <p class="card-text">
+                        LUIGI Analog Watch
+                      </p>
+                      <a href="#" class="btn btn-secondary price">₹21495</a>
+                      <img src="images/cart.svg" style="width: 30px; cursor: pointer;" class="AddCart ms-4">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-3">
+                  <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pro-5.jpeg" width="186px" class="img-fluid img-thumbnail image">
+                      <h5 class="card-title">FOSSIL </h5>
+                      <p class="card-text">
+                        Heritage Analog Watch
+                      </p>
+                      <a href="#" class="btn btn-secondary price">₹23995</a>
+                      <img src="images/cart.svg" style="width: 30px; cursor: pointer;" class="AddCart ms-4">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-3">
+                  <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/pro-6.jpeg" width="196px" class="img-fluid img-thumbnail image">
+                      <h5 class="card-title">CITIZEN  </h5>
+                      <p class="card-text">
+                       Green Analog Watch
+                      </p>
+                      <a href="#" class="btn btn-secondary price">₹23310</a>
+                      <img src="images/cart.svg" style="width: 30px; cursor: pointer;" class="AddCart ms-4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+      </section>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
