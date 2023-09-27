@@ -1,0 +1,17 @@
+.area{
+  width:52%;
+}
+body{
+  background: url("./image/bg-img.jpg") fixed no-repeat;
+  background-size: cover;
+}
+.content{
+  width: 100%;
+}
+.area{
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.text{
+  width:350px
+}
